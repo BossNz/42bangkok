@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>balloon</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            justify-content: center;
+        }
+
+        .ballon {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            border-radius: 100%;
+            color: black;
+            background-color: red;
+        }
+    </style>
+    <script>
+        var i = 0;
+        function clickBalloon(element) {
+            if (element.offsetWidth < "420") {
+                element.style.width = (element.offsetWidth + 10) + "px";
+                element.style.height = (element.offsetHeight + 10) + "px";
+            }
+            else {
+                element.style.width = "200px";
+                element.style.height = "200px";
+            }
+            changeColor(element)
+        }
+
+        function changeColor(element) {
+            if (i == 0) {
+                element.style.backgroundColor = "green";
+                i++;
+            } else if (i == 1) {
+                element.style.backgroundColor = "blue";
+                i++;
+            } else {
+                element.style.backgroundColor = "red";
+                i = 0;
+            }
+        }
+
+        function onHoverBalloon(element) {
+            changeColor(element)
+            element.style.width = element.offsetWidth - 5 + "px";
+            element.style.height = element.offsetHeight - 5 + "px";
+        }
+    </script>
+</head>
+
+<body>
+    <div class="ballon" onclick="clickBalloon(this);" onmouseleave="onHoverBalloon(this);">
+    </div>
+</body>
+
+</html>

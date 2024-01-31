@@ -1,7 +1,23 @@
 .parallax1 {
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Cat_August_2010-4.jpg/1200px-Cat_August_2010-4.jpg");
 
-  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  padding: 300px;
+}
+.blog {
+  text-align: center;
+  padding: 100px;
+  background-color: black;
+  color: white
+}
+
+.parallax2 {
+  background-image: url("https://uploads.dailydot.com/2018/10/olli-the-polite-cat.jpg?q=65&auto=format&w=2270&ar=2:1&fit=crop");
 
   background-attachment: fixed;
   background-position: center;
@@ -9,4 +25,5 @@
   background-size: cover;
   text-align: center;
   color: white;
+  padding: 300px;
 }
