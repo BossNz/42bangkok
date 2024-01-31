@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script>
+        function calcuMath() {
+            var result;
+            var firstNumber = parseInt(document.getElementById("firstNumber").value, 10);
+            var secondNumber = parseInt(document.getElementById("secondNumber").value, 10);
+            var sel = document.getElementById("selectType");
+            switch (sel.value) {
+                case "add":
+                    result = firstNumber + secondNumber;
+                    break;
+                case "less":
+                    result = firstNumber - secondNumber;
+                    break;
+                case "multi":
+                    result = firstNumber * secondNumber;
+                    break;
+                case "divi":
+                    result = firstNumber / secondNumber;
+                    if (result == 0) return alert("It’s over 9000!");
+                    break;
+                case "modul":
+                    result = firstNumber % secondNumber;
+                    if (result == 0) return alert("It’s over 9000!");
+                    break;
+                default:
+                    return alert("please select type");
+                    break;
+            }
+
+            if (firstNumber < 0 && secondNumber < 0) {
+                alert("Error :(");
+            } else {
+                document.getElementById("result").innerHTML = "The result is " + result + ".";
+                alert(document.getElementById("result").innerHTML);
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <input type="text" id="firstNumber" pattern="[0-9]+" />
+        <select id="selectType">
+            <option>Choose</option>
+            <option value="add" id="add">+</option>
+            <option value="less" id="less">-</option>
+            <option value="multi" id="multi">*</option>
+            <option value="divi" id="divi">/</option>
+            <option value="modul" id="modul">%</option>
+        </select>
+        <input type="text" id="secondNumber" pattern="[0-9]+" /><br>
+        <input type="submit" onclick="calcuMath()" value="Try me!" />
+        <p id="result"></p>
+    </div>
+</body>
+
+</html>

@@ -5,13 +5,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>กุ๊กกุ๊กไก่</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>กุ๊กกุ๊กไก่ Rush Project</title>
+    <script src="assets/js/tailwind.js"></script>
+    <style type="text/tailwindcss">
+        body{
+            @apply min-h-screen bg-zinc-900 flex flex-col justify-center text-white font-prompt
+        }
+        h1{
+            @apply text-3xl font-bold
+        }
+        h2{
+            @apply text-2xl font-semibold
+        }
+        h3{
+            @apply text-xl font-medium
+        }
+        h4{
+            @apply text-lg font-normal
+        }
+        p{
+            @apply text-sm
+        }
+      </style>
 </head>
 
 <body>
-    <h1 class="text-3xl font-bold underline">
-    </h1>
+    <div class="mx-auto text-center">
+        <div class="group">
+            <h1 class="group-hover:scale-110 group-hover:rotate-2 transition-all duration-500">กุ๊กกุ๊กไก่ 🐣</h1>
+            <h2 class="opacity-50 group-hover:text-yellow-100 transition-all">42Bangkok - Discovery Piscine</h2>
+            <h4 class="opacity-30">Rush Project</h4>
+        </div>
 
+        <div class="flex gap-5 mt-5">
+            <div class="flex justify-center gap-2">
+                <a href="boss">
+                    <div class="border border-zinc-700 rounded-lg shadow-2xl shadow-zinc-300/10 group hover:-translate-y-2 transition-all duration-500 ease-out">
+                        <div class="py-2 px-5 flex gap-2 bg-zinc-800">
+                            <div class="bg-[url('assets/images/boss.jpeg')] h-24 w-24 bg-cover rounded-full"></div>
+                            <div class="my-auto text-left">
+                                <h2>BossNz</h2>
+                                <hr class="opacity-10" />
+                                <p class="opacity-30"> - Fullstack Developer</p>
+                                <p class="opacity-30"> - DevOps Engineer</p>
+                            </div>
+                        </div>
+                        <div class="bg-zinc-900 w-full rounded-b-lg text-sm text-white/70 transition-all group-hover:text-yellow-300">
+                            view info
+                        </div>
+                    </div>
+                </a>
+
+                <a href="boss">
+                    <div class="border border-zinc-700 rounded-lg shadow-2xl shadow-zinc-300/10 group hover:-translate-y-2 transition-all duration-500 ease-out">
+                        <div class="py-2 px-5 flex gap-2 bg-zinc-800">
+                            <div class="bg-[url('assets/images/boss.jpeg')] h-24 w-24 bg-cover rounded-full"></div>
+                            <div class="my-auto text-left">
+                                <h2>BossNz</h2>
+                                <hr class="opacity-10" />
+                                <p class="opacity-30"> - Fullstack Developer</p>
+                                <p class="opacity-30"> - DevOps Engineer</p>
+                            </div>
+                        </div>
+                        <div class="bg-zinc-900 w-full rounded-b-lg text-sm text-white/70 transition-all group-hover:text-yellow-300">
+                            view info
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+
+        <div class="border-t mt-10 border-zinc-600 pt-2">
+            <p class="text-white/60 text-xs text-right">&copy; teluesat and posomta, 2024</p>
+        </div>
+    </div>
 </body>
 
 </html>
