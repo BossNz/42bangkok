@@ -31,19 +31,61 @@
             @apply text-sm
         }
         .link{
-            @apply text-xl text-zinc-100
+            @apply text-sm text-zinc-100
         }
       </style>
 </head>
 
 <body>
-    <div class="bg-[url(https://live.staticflickr.com/1333/1480592087_5c198918c6_c.jpg)] w-full h-60"></div>
-    <div class="max-w-4xl mx-auto">
+    <nav class="border-b-2 border-zinc-600 fixed w-full backdrop-blur-sm">
+        <div class="max-w-5xl mx-auto py-2 px-3 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <button class="rounded-full p-3 bg-zinc-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.587 1.413T20 20zm8-7L4 8v10h16V8zm0-2l8-5H4zM4 8V6v12z" />
+                    </svg>
+                </button>
+                <p class="opacity-70 hidden sm:block">teerawatbossnz@gmail.com</p>
+            </div>
+            <div class="flex gap-2 link opacity-70">
+                <a href="../index.html">Facebook</a>
+                <p>/</p>
+                <a href="../index.html">Instagram</a>
+                <p>/</p>
+                <a href="../index.html">Github</a>
+            </div>
+        </div>
+    </nav>
+    <div class="bg-[url(https://cdn.wallpapersafari.com/47/44/sYgKQi.jpg)] h-[30vh] bg-bottom bg-cover"></div>
+    <div class="max-w-4xl mx-auto px-3">
+        <div class="-mt-12">
+            <div>
+                <div>
+                    <div class="bg-[url('../assets/images/boss.jpeg')] h-32 w-32 bg-cover rounded-full mx-auto shadow-xl shadow-white/10">
+                        <img src="https://docs.nestjs.com/assets/logo-small.svg" class="w-20 absolute -translate-x-20 translate-y-16" />
+                        <img src="https://nuxt.com/assets/design-kit/icon-green.svg" class="w-24 absolute translate-x-28 translate-y-14 rotate-12" />
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <p class="opacity-70">Fullstack Devloper</p>
+                    <h1>Hi, I'm BossNz 👋</h1>
+                    <p class="opacity-80"> Boss | Teerawat Luesat | 30/09/2003 </p>
+                    <p class="opacity-60">Now I'm study at department of computer science, school of science, king mongkut's institute of technology ladkrabang</p>
+                    <p class="opacity-60">ask me about => backend, frontend, database, docker, k8s, terraform</p>
+                </div>
+            </div>
+        </div>
 
-        <div class="w-full bg-zinc-900/10 backdrop-blur-xl -mt-5 border border-zinc-200 rounded flex justify-between py-2 px-5">
-            <a class="link" href="index.html">HOME</a>
-            <a class="link" href="index.html">SKILL</a>
-            <a class="link" href="index.html">CONTACT</a>
+        <div class="grid grid-cols-3 mt-5 gap-4">
+            <div class="min-w-24 p-2 border border-zinc-700 bg-zinc-800 rounded">
+                <img src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_docker_icon_130643.png" class="w-20" />
+            </div>
+            <div class="min-w-24 p-2 border border-zinc-700 bg-zinc-800 rounded">
+                <img src="https://static-00.iconduck.com/assets.00/gitlab-icon-2048x1885-1o0cwkbx.png" class="w-20 my-auto" />
+            </div>
+            <div class="min-w-24 p-2 border border-zinc-700 bg-zinc-800 rounded">
+                <img src="https://qph.cf2.quoracdn.net/main-qimg-729a22aba98d1235fdce4883accaf81e" class="w-20 my-auto" />
+            </div>
         </div>
     </div>
 </body>
