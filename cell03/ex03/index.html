@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <script src="todo.js" defer></script>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background-color: #18181b;
+            color: white;
+        }
+
+        .box {
+            background-color: #3f3f46;
+            padding: 10px;
+            max-width: 300px;
+            margin: auto;
+            border-radius: 0.25rem
+        }
+
+        .title {
+            text-align: center;
+        }
+
+        button {
+            background-color: #18181b;
+            color: white;
+
+        }
+    </style>
+</head>
+
+<body onload="checkForObjectives()">
+    <div class="box">
+        <h1 class="title">To do list</h1>
+        <center>
+            <button onclick="addItem()">new</button>
+        </center>
+        <div class="ft_list">
+            <ul id="list">
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
