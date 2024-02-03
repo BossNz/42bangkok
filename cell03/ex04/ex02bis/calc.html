@@ -12,8 +12,9 @@
             var result;
             var firstNumber = Number($("#firstNumber").val());
             var secondNumber = Number($("#secondNumber").val());
-            console.log(firstNumber, secondNumber)
-            if (firstNumber == NaN || secondNumber == NaN) return alert("Please enter a number");
+            if (isNaN(firstNumber) || isNaN(secondNumber)) {
+                return alert("Please enter a number!")
+            }
             var sel = $("#selectType").val();
             switch (sel) {
                 case "add":

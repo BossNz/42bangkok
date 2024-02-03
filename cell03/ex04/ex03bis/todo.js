@@ -4,7 +4,7 @@ $("#addNew").click(function () {
 function addItem() {
   var text = prompt("This is a prompt box", "this is simple text");
   var list = new Date();
-  setCookie("obj" + list.getTime(), encodeURIComponent(text));
+  setCookie("obj" + list.getTime(), encodeURI(text));
   checkForObjectives();
 }
 
@@ -31,7 +31,7 @@ function checkForObjectives() {
     var part = cookies[i].split("=");
     if (part[0].indexOf("obj") === 0) {
       try {
-        addListItem(part[0], decodeURI(decodeURI(part[1])));
+        addListItem(part[0], decodeURIComponent(part[1]));
       } catch (error) {
         console.log(error.message + " " + part[1]);
       }
